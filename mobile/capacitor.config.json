@@ -1,0 +1,12 @@
+{
+  "appId": "com.airukulele.app",
+  "appName": "空气尤克里里",
+  "webDir": "www",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https"
+  },
+  "ios": {
+    "contentInset": "automatic"
+  }
+}

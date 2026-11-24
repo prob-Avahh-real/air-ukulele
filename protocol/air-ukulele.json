@@ -1,0 +1,25 @@
+{
+  "name": "air-ukulele",
+  "version": "1.0.0",
+  "description": "空气尤克里里手势与和弦协议",
+  "tuning": "GCEA",
+  "gestures": {
+    "ring": {
+      "tilt_left": { "action": "prev_chord", "threshold_deg": 5, "throttle_frames": 8 },
+      "tilt_right": { "action": "next_chord", "threshold_deg": 5, "throttle_frames": 8 },
+      "tilt_up": { "action": "prev_bank", "threshold_deg": 5, "throttle_frames": 8 },
+      "tilt_down": { "action": "next_bank", "threshold_deg": 5, "throttle_frames": 8 },
+      "shake": { "action": "toggle_mute", "threshold_deg": 20, "throttle_frames": 8 }
+    },
+    "cane": {
+      "swing": { "action": "strum", "threshold": 3, "throttle_frames": 6 },
+      "tap": { "action": "mute", "accel_spike": 8, "throttle_frames": 6 }
+    }
+  },
+  "banks": [
+    { "id": "island", "label": "海岛", "chords": ["C", "G", "Am", "F"] },
+    { "id": "folk", "label": "民谣", "chords": ["G", "Em", "C", "D"] },
+    { "id": "blues", "label": "蓝调", "chords": ["A", "D", "E7", "Am"] },
+    { "id": "jazz", "label": "爵士", "chords": ["Cmaj7", "Dm7", "G7", "Am7"] }
+  ]
+}
